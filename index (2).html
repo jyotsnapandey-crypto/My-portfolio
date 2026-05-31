@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jyotsna Pandey — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style (2).css"/>
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+<canvas id="bg-canvas"></canvas>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">JP</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li>
+      <button class="nav-resume-btn" onclick="downloadResume()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+          <polyline points="7 10 12 15 17 10"/>
+          <line x1="12" y1="15" x2="12" y2="3"/>
+        </svg>
+        Resume
+      </button>
+    </li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <span class="hero-eyebrow">Full Stack Developer &amp; UI/UX Designer</span>
+  <h1 class="hero-name">Jyotsna<em>Pandey</em></h1>
+  <p class="hero-tagline">I develop innovative web and AI-powered solutions, blending technical expertise with thoughtful design to create meaningful user experiences.</p>
+  <div class="hero-cta-row">
+    <a href="#projects" class="hero-cta">View My Work →</a>
+    <a
+  href="MY_resume.pdf"
+  download
+  class="hero-resume-btn"
+>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+    <polyline points="7 10 12 15 17 10"/>
+    <line x1="12" y1="15" x2="12" y2="3"/>
+  </svg>
+  Download Resume
+</a>
+  </div>
+  <div class="scroll-hint">
+    <span>scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid reveal">
+    <div class="about-image-wrap">
+      <div class="about-avatar">
+  <img src="profile.jpg" alt="Jyotsna Pandey" />
+</div>
+      <div class="about-deco"></div>
+      <div class="about-deco2">✦</div>
+    </div>
+    <div class="about-text">
+      <p class="section-label">About Me</p>
+      <h2 class="section-title">Building things that <em>matter</em></h2>
+      <p>Hello! I'm <strong>Jyotsna Pandey</strong>, a Computer Science student, a full-stack developer and designer who loves building products that live on the internet. I care about the details — how something looks, how it feels, and how it performs.</p>
+      <p>With experience spanning frontend development, UI/UX design, and backend engineering, I bring ideas to life through clean code and purposeful design. I believe the best products are built where logic meets creativity.</p>
+      <p>Outside of work, I explore new design trends, contribute to open-source projects, and sketch ideas for what I might build next.</p>
+      
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div>
+    <div class="skills-header reveal">
+      <p class="section-label">What I Do</p>
+      <h2 class="section-title">Skills &amp; <em>Expertise</em></h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-icon">⚡</div>
+        <div class="skill-name">Frontend Development</div>
+        <div class="skill-desc">Building responsive, performant interfaces with modern frameworks and best practices.</div>
+        <div class="skill-tags"><span class="skill-tag">HTML</span><span class="skill-tag">CSS</span><span class="skill-tag">JavaScript</span><span class="skill-tag">React</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🎨</div>
+        <div class="skill-name">UI / UX Design</div>
+        <div class="skill-desc">Designing intuitive interfaces with a focus on user experience, accessibility, and visual clarity.</div>
+        <div class="skill-tags"><span class="skill-tag">Figma</span><span class="skill-tag">Prototyping</span><span class="skill-tag">Design Systems</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🛠️</div>
+        <div class="skill-name">Backend Development</div>
+        <div class="skill-desc">Building robust APIs, server logic, and databases that power scalable applications.</div>
+        <div class="skill-tags"><span class="skill-tag">Node.js</span><span class="skill-tag">Python</span><span class="skill-tag">REST APIs</span><span class="skill-tag">SQL</span></div>
+      </div>
+      
+      
+      <div class="skill-card reveal">
+        <div class="skill-icon">🧠</div>
+        <div class="skill-name">Problem Solving</div>
+        <div class="skill-desc">Applying algorithms, data structures, and system design thinking to complex engineering challenges.</div>
+        <div class="skill-tags"><span class="skill-tag">DSA</span><span class="skill-tag">Algorithms</span><span class="skill-tag">System Design</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div>
+    <div class="projects-header reveal">
+      <div>
+        <p class="section-label">My Work</p>
+        <h2 class="section-title">Featured <em>Projects</em></h2>
+      </div>
+    </div>
+    <div class="projects-list">
+ 
+      <!-- ── PROJECT 1 ── -->
+      <div class="project-card reveal">
+        <div class="project-num">01</div>
+        <div class="project-info">
+          <div class="project-title">Zaika Balance</div>
+          <div class="project-desc">Zaika Balance is an AI-powered nutrition platform that helps users make healthier food choices through personalized dietary insights, nutrient tracking, and smart food analysis in a simple, user-friendly experience.
+</div>
+          <div class="project-links">
+            <a href="https://v0-new-project-fjrieal1q6l.vercel.app/" target="_blank" class="proj-link-btn live">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              Visit Project
+            </a>
+            <a href="https://github.com/jyotsnapandey-crypto/zaikabalance-frontend" target="_blank" class="proj-link-btn github">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.4.6.1.82-.26.82-.57v-2c-3.34.72-4.04-1.6-4.04-1.6-.54-1.38-1.33-1.75-1.33-1.75-1.08-.74.08-.73.08-.73 1.2.09 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.1-.77.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.68.83.57C20.57 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div class="project-tech">
+          <span class="tech-badge">React</span>
+          <span class="tech-badge">Python (Flask)</span>
+          <span class="tech-badge">Machine Learning</span>
+        </div>
+      </div>
+ 
+      <!-- ── PROJECT 2 ── -->
+      <div class="project-card reveal">
+        <div class="project-num">02</div>
+        <div class="project-info">
+          <div class="project-title">Hydrottava</div>
+          <div class="project-desc">Hydrotatva is a smart hydroponics platform designed to simplify soilless farming through intelligent monitoring, sustainable cultivation practices, and data-driven insights for efficient crop growth.
+</div>
+          <div class="project-links">
+            <a href="https://github.com/alzz-26/hydrottva" target="_blank" class="proj-link-btn live">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              Visit Project
+            </a>
+            <a href="https://github.com/alzz-26/hydrottva" target="_blank" class="proj-link-btn github">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.4.6.1.82-.26.82-.57v-2c-3.34.72-4.04-1.6-4.04-1.6-.54-1.38-1.33-1.75-1.33-1.75-1.08-.74.08-.73.08-.73 1.2.09 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.1-.77.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.68.83.57C20.57 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div class="project-tech">
+          <span class="tech-badge">Flutter</span>
+          <span class="tech-badge">Firebase</span>
+          <span class="tech-badge">Machine Learning</span>
+        </div>
+      </div>
+ 
+      <!-- ── PROJECT 3 ── -->
+      <div class="project-card reveal">
+        <div class="project-num">03</div>
+        <div class="project-info">
+          <div class="project-title">tic tac toe game</div>
+          <div class="project-desc">A classic Tic Tac Toe game built using HTML, CSS, and JavaScript, featuring interactive gameplay, real-time win detection, and a clean, responsive user interface for an engaging user experience.
+</div>
+          <div class="project-links">
+            <a href="https://tic-tac-toe-xqd5.vercel.app/" target="_blank" class="proj-link-btn live">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              Visit Project
+            </a>
+            <a href="https://github.com/yourusername/repo" target="_blank" class="proj-link-btn github">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.4.6.1.82-.26.82-.57v-2c-3.34.72-4.04-1.6-4.04-1.6-.54-1.38-1.33-1.75-1.33-1.75-1.08-.74.08-.73.08-.73 1.2.09 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.1-.77.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.68.83.57C20.57 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div class="project-tech">
+          <span class="tech-badge">html</span>
+          <span class="tech-badge">css</span>
+          <span class="tech-badge">javascript</span>
+        </div>
+      </div>
+ 
+      
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="reveal" style="text-align:center">
+    <p class="section-label">Get in Touch</p>
+    <h2 class="section-title">Let's <em>Work Together</em></h2>
+  </div>
+  <p class="contact-intro reveal">Got an idea worth building? I'm always open to meaningful collaborations, interesting conversations, and new opportunities. Let's connect and create something great together!</p>
+  <div class="contact-grid reveal">
+    <a href="mailto:jyotsnapandey0126@gmail.com" class="contact-item">
+      <span class="ci-icon">✉️</span>
+      <span class="ci-label">Email</span>
+      <span class="ci-value">jyotsnapandey0126@gmail.com</span>
+    </a>
+    <a href="https://www.linkedin.com/in/jyotsna-pandey-38709532a/" class="contact-item">
+      <span class="ci-icon">💼</span>
+      <span class="ci-label">LinkedIn</span>
+      <span class="ci-value">Jyotsna Pandey</span>
+    </a>
+    <a href="https://github.com/jyotsnapandey-crypto" class="contact-item">
+      <span class="ci-icon">⌥</span>
+      <span class="ci-label">GitHub</span>
+      <span class="ci-value">@jyotsnapandey</span>
+    </a>
+  </div>
+ <form class="contact-form reveal" action="https://formspree.io/f/xzdwqjen" method="POST">
+    <div class="form-row">
+      <input type="text" name="name" placeholder="Your Name"/>
+      <input type="email" name="email" placeholder="Your Email"/>
+    </div>
+    <input type="text" name="subject" placeholder="Subject"/>
+    <textarea name="message" rows="5" placeholder="Your Message..."></textarea>
+    <button class="btn-send" type="submit">Send Message →</button>
+</form>
+</section>
+
+<footer>
+  <p>© 2025 Jyotsna Pandey — Designed &amp; Built with care</p>
+</footer>
+
+<!-- EDIT PROJECT MODAL -->
+<div class="modal-overlay" id="edit-modal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeEditModal()">✕</button>
+    <div class="modal-title" id="edit-modal-title">Edit Project</div>
+    <p class="modal-sub">Update your project details below.</p>
+    <div class="modal-field">
+      <label>Project Title</label>
+      <input type="text" id="edit-proj-title" placeholder="My Project"/>
+    </div>
+    <div class="modal-field">
+      <label>Description</label>
+      <textarea id="edit-proj-desc" rows="3" placeholder="What does this project do?"></textarea>
+    </div>
+    <div class="modal-field">
+      <label>Tech Stack Tags</label>
+      <div id="edit-tags-row" class="modal-tags-row"></div>
+      <div class="tag-add-row">
+        <input type="text" id="new-tag-input" placeholder="e.g. React, Python…"/>
+        <button class="tag-add-btn" onclick="addTag()">+ Add</button>
+      </div>
+    </div>
+    <hr class="modal-divider"/>
+    <div class="modal-field">
+      <label>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        Live / Deployed URL
+      </label>
+      <input type="url" id="edit-proj-live" placeholder="https://your-project.vercel.app"/>
+    </div>
+    <div class="modal-field">
+      <label>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.4.6.1.82-.26.82-.57v-2c-3.34.72-4.04-1.6-4.04-1.6-.54-1.38-1.33-1.75-1.33-1.75-1.08-.74.08-.73.08-.73 1.2.09 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.3 3.46.99.1-.77.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.68.83.57C20.57 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
+        GitHub Repository URL
+      </label>
+      <input type="url" id="edit-proj-gh" placeholder="https://github.com/yourusername/repo"/>
+    </div>
+    <div class="modal-actions">
+      <button class="modal-save" onclick="saveEditModal()">Save Project</button>
+      <button class="modal-cancel" onclick="closeEditModal()">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<!-- LINKS MODAL -->
+<div class="modal-overlay" id="link-modal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div class="modal-title" id="modal-project-name">Project</div>
+    <p class="modal-sub">Add your project links below.</p>
+    <div class="modal-field">
+      <label>Live / Deployed URL</label>
+      <input type="url" id="modal-live-input" placeholder="https://your-project.vercel.app"/>
+    </div>
+    <div class="modal-field">
+      <label>GitHub Repository URL</label>
+      <input type="url" id="modal-gh-input" placeholder="https://github.com/yourusername/repo"/>
+    </div>
+    <div class="modal-actions">
+      <button class="modal-save" onclick="saveLinks()">Save Links</button>
+      <button class="modal-cancel" onclick="closeModal()">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<div class="dl-toast" id="dl-toast">✦ Done!</div>
+
+<script src="script (2).js"></script>
+</body>
+</html>
